@@ -46,7 +46,7 @@ class ViewController: UIViewController {
     }
     
     private func fixBug() {
-        IQKeyboardManager.shared.isEnabled = false
+        IQKeyboardManager.shared.disabledDistanceHandlingClasses.append(ViewController.self)
         addObserverKeyboard()
     }
     
